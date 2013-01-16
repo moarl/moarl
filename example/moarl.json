@@ -16,7 +16,7 @@
 				"top-color":   {"color": "#EEE"}, 
 				"right-color": {"color": "#EEE"}, 
 				"bottom-color: {"color": "#EEE"},
-				"left-color:   {"color": "#EEE}
+				"left-color:   {"color": "#EEE"}
 			}
 		},
 		"drop-shadow": {
