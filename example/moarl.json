@@ -9,19 +9,25 @@
 		"localMixins/something.less",
 		"mixin.less"
 	],
-	"provides": {
+	"expects": [
+		"borderSize",
+		"borderColor"
+	],
+	"exports": {
 		"bordered": {
+			"categories": ["border"],
 			"description": "Quick way to set a 1 pixel thick border that varis its color on each side. The color value goes in a clockwise order: top, right, bottom, left",
-			"arity": {
-				"top-color":   {"color": "#EEE"}, 
-				"right-color": {"color": "#EEE"}, 
+			"arguments": {
+				"top-color":    {"color": "#EEE"}, 
+				"right-color":  {"color": "#EEE"}, 
 				"bottom-color": {"color": "#EEE"},
 				"left-color":   {"color": "#EEE"}
 			}
 		},
 		"drop-shadow": {
+			"categories": ["border", "shadow"],
 			"description": "Adds a box-shadow that is semi-transparent black. The first two values control the x and y axis position, the third controls blur (how big the shadow is), and the final value is the opacity (0 is fully transparent, 1 is opaque).",
-			"arity": {
+			"arguments": {
 				"x-axis": {"size": "0"},
 				"y-axis": {"size": "1px"},
 				"blur":   {"size": "2px"},
